@@ -1,0 +1,16 @@
+app:
+  host: "http://localhost:8000/"
+
+database:
+  host: "percona-ajarcms"
+  name: "ajarcms"
+  port: "3306"
+  user: "ajarcms"
+  password: "ajarcms"
+
+mail:
+  smtp: "SSL0.OVH.NET"
+  port: "465"
+  username: "root@ajarcms.com"
+  password: "yaFBfi3x"
+  expeditor_adress: "root@ajarcms.com"

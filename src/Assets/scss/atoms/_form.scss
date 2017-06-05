@@ -1,0 +1,48 @@
+form{
+
+  input{
+    font-size: .8em;
+    min-width: 200px;
+    border: 1px solid $primary-color;
+    padding: 1em;
+    margin: 1em auto;
+    box-sizing: border-box;
+  }
+  button[type=submit]{
+    font-size: .8em;
+    padding: 1em;
+    background: $primary-color;
+    border: 1px solid $primary-color;
+    color: white;
+    margin: 1em auto;
+
+    &:hover{
+      background: darken($primary-color, 10%);
+      border-color: darken($primary-color, 10%);
+      cursor: pointer;
+    }
+  }
+}
+
+.form{
+  &.full-width{
+    input[type=text], input[type=date], input[type=password], input[type=email]{
+      width: 100%;
+    }
+    button{
+      width: 100%;
+    }
+  }
+}
+
+.errors{
+  .error{
+    background: #f2dede;
+    border: 1px solid darken(#f2dede, 10%);
+    color: #a94442;
+    border-radius: 5px 5px;
+    padding: 1em;
+    margin: 1em auto;
+    font-size: .9em;
+  }
+}

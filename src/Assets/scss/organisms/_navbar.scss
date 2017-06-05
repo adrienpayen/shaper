@@ -1,0 +1,50 @@
+$height: 80px;
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  display: block;
+  z-index: 1;
+  height: $height;
+
+  .top{
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(to right, #ef4572 0%,#faa42f 50%,#73c2ed 100%);
+  }
+  .brand {
+    float: left;
+    display: inline-block;
+    max-height: $height;
+    line-height: 80px;
+    transform: translateY( 12px );
+
+    img{
+      max-height: $height;
+    }
+  }
+  ul {
+    display: inline-block;
+    margin: 1em 0;
+
+    li{
+      display: inline-block;
+      height: $height;
+      line-height: $height;
+      margin: 0 1em;
+    }
+  }
+  .pull-right{
+    margin: 1em 0;
+    display: inline-block;
+    height: $height;
+    line-height: $height;
+  }
+  a{
+    color: white;
+  }
+  .btn{
+    transform: translateY(15px);
+    font-size: .8em;
+  }
+}

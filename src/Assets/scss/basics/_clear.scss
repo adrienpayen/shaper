@@ -1,0 +1,22 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: $default;
+}
+
+.pull-right{
+  float: right;
+}
+
+.txt-center{
+  text-align: center;
+}
+
+.grey-background{
+  background: #f3f3f3;
+  min-height: 100vh;
+}

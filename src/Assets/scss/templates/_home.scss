@@ -1,0 +1,72 @@
+#home-ajarcms {
+  .top-section{
+    background: url("../img/home.jpeg") center center no-repeat;
+    background-size: cover;
+    width: 100vw;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+
+    .container{
+      position: absolute;
+      background: rgba(0, 0, 0, 0.75);
+      width: 100vw;
+      max-width: 100vw;
+      height: 100vh;
+      margin-top: -2em;
+
+      .desc {
+        margin-top: 50vh;
+        transform: translateY(-50%);
+        text-align: center;
+
+        .btn{
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .about-section{
+    background: white;
+    color: #6594ad;
+
+    h2{
+      font-size: 2em;
+      margin: 2em 0;
+      text-align: center;
+    }
+    .circle-img {
+      background: #6594ad;
+      width: 200px;
+      height: 200px;
+      margin:auto;
+      border-radius: 50%;
+      overflow: hidden;
+
+      .img-cube {
+        height: 200px;
+        width: 200px;
+        background: url('../img/cube.png') center center no-repeat;
+        background-size: 125px;
+      }
+      .img-admin {
+        height: 200px;
+        width: 200px;
+        background: url('../img/admin.png') center center no-repeat;
+        background-size: 125px;
+      }
+      .img-rocket {
+        height: 200px;
+        width: 200px;
+        background: url('../img/rocket.png') center center no-repeat;
+        background-size: 125px;
+      }
+    }
+  }
+  .open-source-section{
+    background: url('../img/free.jpg') center center no-repeat;
+    background-position-y: -700px;
+    color: white;
+    text-align: center;
+  }
+}

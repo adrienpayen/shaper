@@ -1,0 +1,58 @@
+.container {
+  height: 100%;
+  margin: auto;
+  position: relative;
+  padding: 1em 0;
+  width: 100%;
+
+  @media screen and(max-width: $small){
+    max-width: 460px;
+  }
+  @media screen and(max-width: $medium){
+    max-width: 780px;
+  }
+  @media screen and(min-width: $medium){
+    max-width: 960px;
+  }
+}
+
+.row{
+  width: 100%;
+  display: block;
+
+  [class^='col-'] {
+    display: inline-block;
+    vertical-align: top;
+    padding: .5em;
+    box-sizing: border-box;
+  }
+
+  @media screen and(max-width: $small){
+    @for $i from 1 through 12 {
+      .col-s-#{$i} {
+        width: ((100% / 12) * $i ) - 0.5%;
+      }
+    }
+  }
+  @media screen and(max-width: $medium){
+    [class^='col-s'] {
+      width: 100%;
+    }
+    @for $i from 1 through 12 {
+      .col-m-#{$i} {
+        width: ((100% / 12) * $i ) - 0.5%;
+      }
+    }
+  }
+  @media screen and(min-width: $medium){
+    [class^='col-'] {
+      width: 100%;
+    }
+
+    @for $i from 1 through 12 {
+      .col-l-#{$i} {
+        width: ((100% / 12) * $i ) - 0.5%;
+      }
+    }
+  }
+}

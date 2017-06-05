@@ -1,0 +1,14 @@
+{
+    "name": "adrienpayen/ajarcms",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "ajarcms",
+            "email": "ajarcms@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^5.2",
+        "symfony/yaml": "3.4.x-dev"
+    }
+}

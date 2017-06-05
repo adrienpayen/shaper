@@ -1,0 +1,23 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+// VARIABLES
+@import "basics/variables";
+
+// BASICS
+@import "basics/fonts";
+@import "basics/grid";
+@import "basics/clear";
+
+// ATOMS
+@import "atoms/buttons";
+@import "atoms/form";
+
+// MOLECULES
+@import "molecules/card";
+
+// ORGANISMS
+@import "organisms/navbar";
+
+// TEMPLATES
+@import "templates/home";

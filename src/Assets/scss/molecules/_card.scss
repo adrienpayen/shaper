@@ -1,0 +1,19 @@
+.card{
+  padding: 1em;
+  background: white;
+
+  a{
+    color: #afafaf;
+
+    &:hover{
+      color: darken(#afafaf, 30%);
+    }
+  }
+  &.medium{
+    max-width: 600px !important;
+    margin: auto;
+  }
+  &.large{
+    max-width: 800px;
+  }
+}

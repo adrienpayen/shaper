@@ -121,38 +121,17 @@ class Routing
     }
 
     /**
-     * Check if we request admin interface or front interface.
      *
-     * @return bool
      */
     private function distributor()
     {
-        if ($this->uriExploded[0] == "admin") {
-            $routing = Yaml::parse(file_get_contents('../src/BackOffice/Routes.yml'));
+        // todo: 
 
-            $this->checkPath($routing);
+        if ($this->uriExploded[0] == "// prefix du bundle") {
+            $routes = Yaml::parse(file_get_contents("../src/" . "nom du bundle" . "Routes.yml"));
 
-            return true;
-        } else {
-            $route = Yaml::parse(file_get_contents('../src/FrontOffice/Routes.yml'));
-
-
-            if (isset($route[$this->uriExploded[0]])) {
-                $path = $route[$this->uriExploded[0]];
-
-                $this->controllerName = $path['controller'] . "Controller";
-                $this->actionName = $path['action'] . "Action";
-
-                unset($this->uriExploded[0]);
-                unset($this->uriExploded[1]);
-            } else {
-                $this->controllerName = 'IndexController';
-                $this->actionName = 'indexAction';
-            }
-
-            return false;
+            $this->checkPath($routes);
         }
-
     }
 
     /**
